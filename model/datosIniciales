@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+
+public class datosIniciales {
+	ArrayList <Producto> listaDeProductos = new ArrayList <>();
+	
+	//Se completan los datos preeliminares de los Productos
+	public ArrayList <Producto> inicializarProductos () {
+		Utensillo olla = new Utensillo ("OLL", "Olla", "Essen", 30, 50.0, 30.0, false);
+		Utensillo cacerola = new Utensillo ("CRL", "Cacerola", "Essen", 40, 30.0, 10.0, true);
+		Utensillo sarten = new Utensillo ("SRT", "Sarten", "Newsan", 40, 30.0, 15.0, true);
+		Cubierto tenedor = new Cubierto ("TNR", "Tenedor", "Tramontina", 100, 5.0, "Mediano", false);
+		Cubierto cuchillo = new Cubierto ("CLL", "Cuchillo", "Tramontina", 100, 7.0, "Mediano", false);
+		Cubierto cuchara = new Cubierto ("CHR", "Cuchara", "Tramontina", 150, 8.0, "Grande", true);
+		Recipiente plato = new Recipiente ("PLA", "Plato", "Turkiye", 100, 20.0, 20.0, false);
+		Recipiente vaso = new Recipiente ("VAS", "Vaso", "Turkiye", 150, 10.0, 250.0, true);
+		Recipiente jarra = new Recipiente ("JAR", "Jarra", "Gadnic", 50, 30.0, 1200.0, true);
+		
+		//Agregando prouctos a la lista inicial
+		listaDeProductos.add(olla);
+		listaDeProductos.add(cacerola);
+		listaDeProductos.add(sarten);
+		listaDeProductos.add(tenedor);
+		listaDeProductos.add(cuchillo);
+		listaDeProductos.add(cuchara);
+		listaDeProductos.add(plato);
+		listaDeProductos.add(vaso);
+		listaDeProductos.add(jarra);
+		
+		//Imprimiendo el resultado
+		
+		for (int i = 0; i < listaDeProductos.size(); i++) {
+			Producto pto = listaDeProductos.get(i);
+			int idProducto = 1 + i;
+			
+			System.out.println();
+			System.out.println("Numero: " + idProducto);
+			pto.calcularPrecio();
+			pto.asignarCATEGORIA();
+			pto.conversor();
+			pto.mostrarResultado();
+			System.out.println();
+		}		
+	
+	return listaDeProductos;	
+	
+	}
+	
+
+}
+
