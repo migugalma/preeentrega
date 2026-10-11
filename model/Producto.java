@@ -54,7 +54,7 @@ public abstract class Producto {
 
 //Categoria Utensillos
 
-class Utensillo extends Producto {
+public class Utensillo extends Producto {
 	public static final String CATEGORIA = "Utensillo";
 	private double diametro;
 	private boolean conMango;
@@ -174,14 +174,20 @@ class Utensillo extends Producto {
 		this.costo = costo;
 	}
 	
+	public void setDiametro(double diametro) {
+		this.diametro = diametro;
+	}
 
+	public void setConMango(boolean conMango) {
+		this.conMango = conMango;
+	}
 
 }
 
 
 // Categoria Cubiertos
 
-class Cubierto extends Producto {
+public class Cubierto extends Producto {
 	public static final String CATEGORIA = "Cubierto";
 	private String tamano;
 	private boolean mangoMetal;
@@ -304,7 +310,7 @@ class Cubierto extends Producto {
 
 //Categoria Recipientes
 
-class Recipiente extends Producto {
+public class Recipiente extends Producto {
 	public static final String CATEGORIA = "Recipiente";
 	private double capacidad;
 	private boolean esVidrio;

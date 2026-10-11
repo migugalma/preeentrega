@@ -1,0 +1,6 @@
+		//Metodo para cargar productos (me falta aclarar a que categoria pertenece)
+		
+		
+		//Cargar categoria del producto
+		System.out.println("Indicar a categoria pertenece UTENSILLO/CUBIERTO/RECIPIENTE");
+		nvoCATEGORIA = sc.nextLine();

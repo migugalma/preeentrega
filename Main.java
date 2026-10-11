@@ -14,7 +14,8 @@ public class Main {
 		//Leer los datos iniciales
 		serviceProducto cargaDatos = new serviceProducto();
 		//cargaDatos.leerProductosTotal();
-		cargaDatos.leerInventarioTotal();
+		//cargaDatos.leerInventarioTotal();
+		cargaDatos.crearUtensillo();
 	}
 }
 
